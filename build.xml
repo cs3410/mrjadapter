@@ -6,7 +6,7 @@
 	<property name="output.dir" value="${basedir}/build/classes" />
 	<property name="src.dir" value="${basedir}/src" />
 	<property name="stubs.dir" value="${basedir}/Stubs" />
-	<property name="doc.dir" value="${basedir}/Documentation" />
+	<property name="doc.dir" value="${basedir}/docs" />
 	<property name="samples.dir" value="${basedir}/Examples" />
 	
 	<target name="help">
