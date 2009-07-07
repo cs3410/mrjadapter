@@ -1,1 +1,13 @@
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />MRJ Adapter implements a unified API for Java developers to access Mac specific functionality built into the various versions of the Apple virtual machine, without compromising the cross-platform nature of an application.
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<p>The term "MRJ", or Macintosh Runtime for Java, used to be the name of Apple's Java virtual machine in the days of classic Mac OS. When Mac OS X came along, the use of the name faded slowly until Apple's Java 1.4 virtual machine came to life, which completely dropped any reference to the name. Maybe I should drop the reference as well for MRJ Adapter, but until I do, let's make it clear that MRJ Adapter is a library that allows your code to work with any and all versions of Apple's Java virtual machine, from the oldest to the latest and greatest.</p>
+
+<p>MRJ Adapter is partially a wrapper around some APIs provided by Apple and which are built into their various virtual machines. However, they have changed over time and some APIs were not always available, so MRJ Adapter provides a consistent API for the developer wanting to target the Mac.</p>
+
+<p>MRJ Adapter is an easier path for developers because it is easier to learn, leveraging concepts they already know, such as action listeners to handle menu items. It also shields the developer from the problems associated with compiling their code on other platforms when the APIs they need only exist on the Mac.</p>
+
+<p>MRJ Adapter incorporates a wealth of knowledge and little-known tricks about Apple's virtual machines that no developer should be expected to know off-hand, especially if they come from other platforms. Things like how to bring up a folder chooser dialog, or how to open a document with the application that created it are addressed by MRJ Adapter.</p>
+
+<p>MRJ Adapter implements many things the Apple APIs don't address, such as automatic handling of all-inclusive menu bars, assignment of a menu bar to be shown when no frame is visible, and more.</p>
+
+<p>I wrote this library because I needed this functionality in my work and I found that it would be of interest to many other developers.</p>
