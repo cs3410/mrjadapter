@@ -72,7 +72,7 @@ import java.awt.event.ActionListener;
  * @see QuitMenuItem
  * @see net.roydesign.event.ApplicationEvent
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public class Application
 {

@@ -33,7 +33,7 @@ import java.io.File;
  * This corresponds to MRJ 4 and above which implements Java 1.4.1 and above.
  * @see MRJEventProxy
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 class MRJ4EventProxy extends MRJEventProxy
 {

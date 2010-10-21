@@ -34,7 +34,7 @@ import java.io.IOException;
  * this is always work in progress. Support for classic Mac OS, Mac OS X, and
  * Windows is currently implemented.
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public class ApplicationFile
 {

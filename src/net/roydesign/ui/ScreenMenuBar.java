@@ -90,7 +90,7 @@ import java.awt.Frame;
  * of menus and menu items, each with its own state, even though they might all 
  * look like the same menu to the user, particularly on Mac OS.</p>
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public class ScreenMenuBar extends java.awt.MenuBar
 {

@@ -25,7 +25,7 @@ import com.apple.mrj.macos.libraries.InterfaceLib;
  * MRJ 2.2 on classic Mac OS. Those two versions of MRJ didn't have built-in
  * support for this event.
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 class JD2AppleEventFunctions implements InterfaceLib
 {

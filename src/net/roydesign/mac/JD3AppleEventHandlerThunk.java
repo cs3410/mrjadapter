@@ -26,7 +26,7 @@ import com.apple.mrj.jdirect.MethodClosure;
  * MRJ 3.x. It creates an object that can be used as a callback in the context
  * of JDirect 3.
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 class JD3AppleEventHandlerThunk extends MethodClosure
 {

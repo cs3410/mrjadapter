@@ -40,7 +40,7 @@ import java.util.Vector;
  *
  * @see ScreenMenuBar
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public class ScreenMenuItem extends java.awt.MenuItem
 {

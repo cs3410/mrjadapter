@@ -36,7 +36,7 @@ import java.io.File;
  * respectively.
  * @see MRJEventProxy
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 class MRJ23EventProxy extends MRJEventProxy
 {

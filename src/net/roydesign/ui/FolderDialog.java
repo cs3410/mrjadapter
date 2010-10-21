@@ -38,7 +38,7 @@ import java.util.Properties;
  * kludge which is to show a Save dialog. If you would rather use the Swing
  * JFileChooser, go right ahead.
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public class FolderDialog extends FileDialog
 {

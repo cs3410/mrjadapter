@@ -39,7 +39,7 @@ import java.util.Properties;
  * make file dialogs not show application bundles as folders but as files,
  * which means you don't have to worry about any of it.
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public class ApplicationDialog extends FileDialog
 {

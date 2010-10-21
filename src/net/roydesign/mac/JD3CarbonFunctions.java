@@ -26,7 +26,7 @@ import com.apple.mrj.jdirect.Linker;
  * when running in MRJ 3.0 and MRJ 3.1 on Mac OS X. Those two versions of MRJ
  * didn't have built-in support for this item and this event.
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 class JD3CarbonFunctions
 {

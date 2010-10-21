@@ -44,7 +44,7 @@ import java.awt.Insets;
  * automatically on the screen and supports credits in RTF, HTML or plain
  * text formats.
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public class StandardMacAboutFrame extends JFrame
 {

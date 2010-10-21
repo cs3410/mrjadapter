@@ -50,7 +50,7 @@ import java.util.Vector;
  *
  * @see JScreenMenuBar
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public class JScreenMenu extends javax.swing.JMenu implements PropertyChangeListener
 {

@@ -44,7 +44,7 @@ import java.awt.event.ActionListener;
  * <li>removeActionListener</li>
  * </ul>
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public class AboutMenuItem extends MenuItem
 {

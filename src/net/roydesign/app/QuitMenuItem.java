@@ -47,7 +47,7 @@ import java.awt.event.ActionListener;
  * all platforms)</li>
  * </ul>
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public class QuitMenuItem extends MenuItem
 {

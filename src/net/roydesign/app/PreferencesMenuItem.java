@@ -46,7 +46,7 @@ import java.awt.event.ActionListener;
  * <li>isEnabled()</li>
  * </ul>
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public class PreferencesMenuItem extends MenuItem
 {

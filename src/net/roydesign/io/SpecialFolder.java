@@ -32,7 +32,7 @@ import java.io.FileNotFoundException;
  * in terms of supported platforms. The idea is to add to it as development needs
  * come up. Code contributions are welcome.
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public class SpecialFolder
 {

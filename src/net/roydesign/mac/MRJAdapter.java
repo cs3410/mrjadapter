@@ -106,14 +106,14 @@ import java.util.Properties;
  * <code>net.roydesign.io</code> which essentially integrate this functionality
  * in a more cross-platform way.</p>
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public final class MRJAdapter implements MRJFolderConstants
 {
 	/**
 	 * The version of MRJ Adapter.
 	 */
-	public static final String VERSION = "1.1";
+	public static final String VERSION = "1.2";
 
 	/**
 	 * The version of the Java VM.

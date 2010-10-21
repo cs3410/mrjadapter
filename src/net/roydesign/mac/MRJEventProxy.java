@@ -41,7 +41,7 @@ import java.util.Hashtable;
  * @see MRJ23EventProcy
  * @see MRJ4EventProcy
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 abstract class MRJEventProxy
 {

@@ -56,7 +56,7 @@ import java.io.IOException;
  * typically highly platform dependent and error prone. Using this class makes
  * it simple. All you have to do is <code>new DocumentFile(myFile).open()</code>.</p>
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public class DocumentFile
 {

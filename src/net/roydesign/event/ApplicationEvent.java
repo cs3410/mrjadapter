@@ -59,7 +59,7 @@ import java.io.File;
  * @see net.roydesign.mac.MRJAdapter
  * @see net.roydesign.app.Application
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public class ApplicationEvent extends ActionEvent
 {

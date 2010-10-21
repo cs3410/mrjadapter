@@ -25,7 +25,7 @@ package net.roydesign.mac;
  * any built-in support for handling arbitrary Apple events by your
  * application.
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public interface AppleEventHandler
 {

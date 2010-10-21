@@ -21,7 +21,7 @@ package net.roydesign.mac;
  * This interface defines some useful Mac OS constants to use with the
  * <code>MRJAdapter.findFolder()</code> method.
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public interface MRJFolderConstants
 {

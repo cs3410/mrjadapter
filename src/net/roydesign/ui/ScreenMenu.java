@@ -44,7 +44,7 @@ import java.util.Vector;
  *
  * @see ScreenMenuBar
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public class ScreenMenu extends java.awt.Menu implements PropertyChangeListener
 {

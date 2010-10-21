@@ -92,7 +92,7 @@ import java.awt.Container;
  * of menus and menu items, each with its own state, even though they might all 
  * look like the same menu to the user, particularly on Mac OS.</p>
  * 
- * @version MRJ Adapter 1.1
+ * @version MRJ Adapter 1.2
  */
 public class JScreenMenuBar extends javax.swing.JMenuBar
 {
