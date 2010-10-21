@@ -8,6 +8,7 @@
 	<property name="stubs.dir" value="${basedir}/Stubs" />
 	<property name="doc.dir" value="${basedir}/docs" />
 	<property name="samples.dir" value="${basedir}/Examples" />
+	<property name="distro.dir" value="${basedir}/distro" />
 	
 	<target name="help">
 		<echo message="usage: ant [target]" />
@@ -19,6 +20,7 @@
 		<echo message="  build	   Build the MRJAdapter.jar library (default)" />
 		<echo message="  samples   Build the sample code" />
 		<echo message="  docs      Create the API documentation" />
+		<echo message="  distro    Package the distribution" />
 	</target>
 	
 	<target name="cleanall" depends="clean">
@@ -96,5 +98,30 @@
 			author="true" version="true">
 			<packageset dir="${src.dir}" />
 		</javadoc>
+	</target>
+	
+	<target name="distro" depends="buildall">
+		<mkdir dir="${distro.dir}" />
+        <copy todir="${distro.dir}">
+            <fileset file="${basedir}/build.xml" />
+            <fileset file="${library.jar}" />
+        </copy>
+        <copy todir="${distro.dir}/docs">
+            <fileset dir="${doc.dir}" />
+        </copy>
+        <copy todir="${distro.dir}/Examples">
+            <fileset dir="${samples.dir}" />
+        </copy>
+        <chmod perm="+x">
+            <fileset dir="${distro.dir}/Examples">
+                <include name="**/*.app/Contents/MacOS/*"/>
+            </fileset>
+        </chmod>
+        <copy todir="${distro.dir}/src">
+            <fileset dir="${src.dir}" />
+        </copy>
+        <copy todir="${distro.dir}/Stubs">
+            <fileset dir="${stubs.dir}" />
+        </copy>
 	</target>
 </project>
