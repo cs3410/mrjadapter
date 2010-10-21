@@ -24,6 +24,7 @@
 	</target>
 	
 	<target name="cleanall" depends="clean">
+		<delete dir="${distro.dir}" />
 		<delete dir="${doc.dir}" />
 		<delete dir="${samples.dir}/Complete App/classes" />
 		<delete>
