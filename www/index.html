@@ -1,7 +1,7 @@
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />                                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-<P><B>[ <A HREF="#features">Features</A>
-| <A HREF="#change_history">Change History</A>
+<P><B>[ <A HREF="#change_history">Change History</A>
+| <A HREF="#features">Features</A>
 | <A HREF="#documentation">Documentation</A>
 | <A HREF="#screenshots">Screenshots</A>
 | <A HREF="#links">Links</A> ]</B></P>
@@ -41,10 +41,29 @@ bar to be shown when no frame is visible, and more.</P>
 <P>I wrote this library because I needed this functionality in my work
 and I found that it would be of interest to many other developers.</P>
 
+<!-- Change History -->
+<h2><a name="change_history">Change History</a></h2>
+
+<P><B>Version 1.2</B></P>
+
+<UL>
+       <LI>Fixed bug associated with Java for Mac OS X 10.6 Update 3 where the Preferences menu item does not appear in the application menu when attaching an ActionListener to it.</LI>
+</UL>
+
+<P><B>Version 1.1</B></P>
+
+<UL>
+       <LI>Fixed frameless menu bar was showing a frame under certain circumstances.</LI>
+       <LI>Fixed parsing of mrj.version property on Mac OS X 10.5.</LI>
+       <LI>Fix for NullPointerException when using StandardMacAboutFrame in CDE/Motif L&F.</LI>
+       <LI>Renamed 'enum' variables for compilation with Java 1.5.</LI>
+       <LI>Fixed MRJAdapter.getFileCreator() to work with application bundles.</LI>
+</UL>
+
 <!-- Features -->
 <h2><a name="features">Features</a></h2>
 
-<H4>Unified APIs &amp; Functionality</H4>
+<H4>Unified APIs & Functionality</H4>
 
 <UL>
 	<LI>Get and set file types and creator codes.</LI>
@@ -84,7 +103,7 @@ and I found that it would be of interest to many other developers.</P>
 	<LI>Handling of all Mac-specific events via familiar MenuItems, JMenuItems, ActionEvents, ActionListeners and Actions. The Apple APIs use Mac-specific events and listeners.</LI>
 	
 
-	<LI>Find out whether Swing is currently using the screen menu bar or not. This can be true or false depending on the system properties set, and on the Swing L&amp;F currently in use, and there is no method in the Apple classes to discover this.</LI>
+	<LI>Find out whether Swing is currently using the screen menu bar or not. This can be true or false depending on the system properties set, and on the Swing L&F currently in use, and there is no method in the Apple classes to discover this.</LI>
 	
 	<LI>Set a menu bar to be shown when no frame is visible. This is a normal state for a Mac application and Java has no built-in facility to do this, nor does Apple provide any API for it.</LI>
 	
@@ -122,23 +141,6 @@ and I found that it would be of interest to many other developers.</P>
 	<LI>Easy compilation on other platforms. If you link with MRJAdapter.jar, there is no need for stubs of any kind. It will just work, on any platform.</LI>
 	
 	<LI>Stubs provided for compilation of MRJ Adapter on platforms other than the Mac. This is just for compiling, and the stubs don't need to be included in the resulting JAR file.</LI>
-</UL>
-
-<!-- Change History -->
-<h2><a name="change_history">Change History</a></h2>
-
-<P><B>Changes in 1.1</B></P>
-
-<UL>
-       <LI>Fixed frameless menu bar was showing a frame under certain circumstances.</LI>
-
-       <LI>Fixed parsing of mrj.version property on Mac OS X 10.5.</LI>
-
-       <LI>Fix for NullPointerException when using StandardMacAboutFrame in CDE/Motif L&amp;F.</LI>
-
-       <LI>Renamed 'enum' variables for compilation with Java 1.5.</LI>
-
-       <LI>Fixed MRJAdapter.getFileCreator() to work with application bundles.</LI>
 </UL>
 
 <!-- Documentation -->
@@ -227,4 +229,5 @@ correctly on any platform, without cluttering your code with
 	<LI><A HREF="http://today.java.net/pub/a/today/2003/12/08/swing.html" TARGET="_blank"> Make Your Swing App Go Native</A></LI>
 	<LI><A HREF="http://weblogs.java.net/pub/wlg/772">Going Native</A></LI>
 </UL>
-</td></tr></table>
+</td></tr></table> 
+              
