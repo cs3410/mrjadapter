@@ -1,0 +1,40 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>mrjadapter</groupId>
+        <artifactId>stubs</artifactId>
+        <version>1.0</version>
+    </parent>
+    <groupId>mrjadapter</groupId>
+    <artifactId>mrj-2-and-3-stubs</artifactId>
+    <version>1.0</version>
+    <packaging>jar</packaging>
+    <name>MRJ 2 &amp; 3 Stubs</name>
+    
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>2.5.2</version>
+                <configuration>
+                    <groupId>mrjadapter</groupId>
+                    <artifactId>mrj-2-and-3-stubs-bin</artifactId>
+                    <version>1.0</version>
+                    <file>MRJToolkitStubs.jar</file>
+                    <packaging>jar</packaging>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>install-bin</id>
+                        <phase>install</phase>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>
