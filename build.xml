@@ -4,7 +4,7 @@
 	<property name="jar.name" value="MRJAdapter.jar" />
 	<property name="library.jar" value="${basedir}/${jar.name}" />
 	<property name="output.dir" value="${basedir}/build/classes" />
-	<property name="src.dir" value="${basedir}/src" />
+	<property name="src.dir" value="${basedir}/mrjadapter/src" />
 	<property name="stubs.dir" value="${basedir}/Stubs" />
 	<property name="doc.dir" value="${basedir}/docs" />
 	<property name="samples.dir" value="${basedir}/Examples" />
@@ -46,7 +46,7 @@
 	<target name="build">
 		<mkdir dir="${output.dir}" />
     	<javac srcdir="${src.dir}" destdir="${output.dir}"
-    		target="1.1" source="1.2" deprecation="off" debug="on">
+    		target="1.6" source="1.6" deprecation="off" debug="on">
 			<classpath>
 				<fileset dir="${stubs.dir}">
 					<include name="**/*.jar" />
@@ -63,7 +63,7 @@
 		<javac srcdir="${samples.dir}/Complete App/src"
 			destdir="${samples.dir}/Complete App/classes"
 			classpath="${library.jar}"
-    		target="1.1" source="1.2"
+    		target="1.6" source="1.6"
 			debug="on" />
 		<jar destfile="${samples.dir}/Complete App/Test.jar"
 			basedir="${samples.dir}/Complete App/classes"
@@ -72,25 +72,25 @@
 		<copy file="${library.jar}" todir="${samples.dir}/Frameless Menu Bar" />
 		<javac srcdir="${samples.dir}/Frameless Menu Bar"
 			classpath="${library.jar}"
-    		target="1.1" source="1.2"
+    		target="1.6" source="1.6"
 			debug="on" />
 		
 		<copy file="${library.jar}" todir="${samples.dir}/Simple MRJAdapter" />
 		<javac srcdir="${samples.dir}/Simple MRJAdapter"
 			classpath="${library.jar}"
-    		target="1.1" source="1.2"
+    		target="1.6" source="1.6"
 			debug="on" />
 		
 		<copy file="${library.jar}" todir="${samples.dir}/Standard Menu Items" />
 		<javac srcdir="${samples.dir}/Standard Menu Items"
 			classpath="${library.jar}"
-    		target="1.1" source="1.2"
+    		target="1.6" source="1.6"
 			debug="on" />
 		
 		<copy file="${library.jar}" todir="${samples.dir}/Screen Menu Bar" />
 		<javac srcdir="${samples.dir}/Screen Menu Bar"
 			classpath="${library.jar}"
-    		target="1.1" source="1.2"
+    		target="1.6" source="1.6"
 			debug="on" />
 	</target>
 	

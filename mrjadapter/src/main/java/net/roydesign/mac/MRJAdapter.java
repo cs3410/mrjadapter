@@ -787,7 +787,9 @@ public final class MRJAdapter implements MRJFolderConstants
 	 */
 	public static void addAboutListener(ActionListener l, Object source)
 	{
-		if (mrjVersion >= 4.0f)
+		if (mrjVersion >= 9.0f)
+			MRJ9EventProxy.getInstance().addAboutListener(l, source);
+		else if (mrjVersion >= 4.0f)
 			MRJ4EventProxy.getInstance().addAboutListener(l, source);
 		else if (mrjVersion >= 1.5f)
 			MRJ23EventProxy.getInstance().addAboutListener(l, source);
@@ -799,7 +801,9 @@ public final class MRJAdapter implements MRJFolderConstants
 	 */
 	public static void removeAboutListener(ActionListener l)
 	{
-		if (mrjVersion >= 4.0f)
+		if (mrjVersion >= 9.0f)
+			MRJ9EventProxy.getInstance().removeAboutListener(l);
+		else if (mrjVersion >= 4.0f)
 			MRJ4EventProxy.getInstance().removeAboutListener(l);
 		else if (mrjVersion >= 1.5f)
 			MRJ23EventProxy.getInstance().removeAboutListener(l);
@@ -837,7 +841,9 @@ public final class MRJAdapter implements MRJFolderConstants
 	 */
 	public static void addPreferencesListener(ActionListener l, Object source)
 	{
-		if (mrjVersion >= 4.0f)
+		if (mrjVersion >= 9.0f)
+			MRJ9EventProxy.getInstance().addPreferencesListener(l, source);
+		else if (mrjVersion >= 4.0f)
 			MRJ4EventProxy.getInstance().addPreferencesListener(l, source);
 		else if (mrjVersion >= 3.0f)
 			MRJ23EventProxy.getInstance().addPreferencesListener(l, source);
@@ -849,7 +855,9 @@ public final class MRJAdapter implements MRJFolderConstants
 	 */
 	public static void removePreferencesListener(ActionListener l)
 	{
-		if (mrjVersion >= 4.0f)
+		if (mrjVersion >= 9.0f)
+			MRJ9EventProxy.getInstance().removePreferencesListener(l);
+		else if (mrjVersion >= 4.0f)
 			MRJ4EventProxy.getInstance().removePreferencesListener(l);
 		else if (mrjVersion >= 3.0f)
 			MRJ23EventProxy.getInstance().removePreferencesListener(l);
@@ -863,7 +871,9 @@ public final class MRJAdapter implements MRJFolderConstants
 	 */
 	public static boolean isPreferencesEnabled()
 	{
-		if (mrjVersion >= 4.0f)
+		if (mrjVersion >= 9.0f)
+			return MRJ9EventProxy.getInstance().isPreferencesEnabled();
+		else if (mrjVersion >= 4.0f)
 			return MRJ4EventProxy.getInstance().isPreferencesEnabled();
 		else if (mrjVersion >= 3.0f)
 			return MRJ23EventProxy.getInstance().isPreferencesEnabled();
@@ -878,7 +888,9 @@ public final class MRJAdapter implements MRJFolderConstants
 	 */
 	public static void setPreferencesEnabled(boolean enabled)
 	{
-		if (mrjVersion >= 4.0f)
+		if (mrjVersion >= 9.0f)
+			MRJ9EventProxy.getInstance().setPreferencesEnabled(enabled);
+		else if (mrjVersion >= 4.0f)
 			MRJ4EventProxy.getInstance().setPreferencesEnabled(enabled);
 		else if (mrjVersion >= 3.0f)
 			MRJ23EventProxy.getInstance().setPreferencesEnabled(enabled);
@@ -906,7 +918,9 @@ public final class MRJAdapter implements MRJFolderConstants
 	 */
 	public static void addOpenApplicationListener(ActionListener l, Object source)
 	{
-		if (mrjVersion >= 4.0f)
+		if (mrjVersion >= 9.0f)
+			MRJ9EventProxy.getInstance().addOpenApplicationListener(l, source);
+		else if (mrjVersion >= 4.0f)
 			MRJ4EventProxy.getInstance().addOpenApplicationListener(l, source);
 		else if (mrjVersion >= 2.2f)
 			MRJ23EventProxy.getInstance().addOpenApplicationListener(l, source);
@@ -918,7 +932,9 @@ public final class MRJAdapter implements MRJFolderConstants
 	 */
 	public static void removeOpenApplicationListener(ActionListener l)
 	{
-		if (mrjVersion >= 4.0f)
+		if (mrjVersion >= 9.0f)
+			MRJ9EventProxy.getInstance().removeOpenApplicationListener(l);
+		else if (mrjVersion >= 4.0f)
 			MRJ4EventProxy.getInstance().removeOpenApplicationListener(l);
 		else if (mrjVersion >= 2.2f)
 			MRJ23EventProxy.getInstance().removeOpenApplicationListener(l);
@@ -946,7 +962,9 @@ public final class MRJAdapter implements MRJFolderConstants
 	 */
 	public static void addReopenApplicationListener(ActionListener l, Object source)
 	{
-		if (mrjVersion >= 4.0f)
+		if (mrjVersion >= 9.0f)
+			MRJ9EventProxy.getInstance().addReopenApplicationListener(l, source);
+		else if (mrjVersion >= 4.0f)
 			MRJ4EventProxy.getInstance().addReopenApplicationListener(l, source);
 		else if (mrjVersion >= 2.2f)
 			MRJ23EventProxy.getInstance().addReopenApplicationListener(l, source);
@@ -958,7 +976,9 @@ public final class MRJAdapter implements MRJFolderConstants
 	 */
 	public static void removeReopenApplicationListener(ActionListener l)
 	{
-		if (mrjVersion >= 4.0f)
+		if (mrjVersion >= 9.0f)
+			MRJ9EventProxy.getInstance().removeReopenApplicationListener(l);
+		else if (mrjVersion >= 4.0f)
 			MRJ4EventProxy.getInstance().removeReopenApplicationListener(l);
 		else if (mrjVersion >= 2.2f)
 			MRJ23EventProxy.getInstance().removeReopenApplicationListener(l);
@@ -996,7 +1016,9 @@ public final class MRJAdapter implements MRJFolderConstants
 	 */
 	public static void addQuitApplicationListener(ActionListener l, Object source)
 	{
-		if (mrjVersion >= 4.0f)
+		if (mrjVersion >= 9.0f)
+			MRJ9EventProxy.getInstance().addQuitApplicationListener(l, source);
+		else if (mrjVersion >= 4.0f)
 			MRJ4EventProxy.getInstance().addQuitApplicationListener(l, source);
 		else if (mrjVersion >= 1.5f)
 			MRJ23EventProxy.getInstance().addQuitApplicationListener(l, source);
@@ -1008,7 +1030,9 @@ public final class MRJAdapter implements MRJFolderConstants
 	 */
 	public static void removeQuitApplicationListener(ActionListener l)
 	{
-		if (mrjVersion >= 4.0f)
+		if (mrjVersion >= 9.0f)
+			MRJ9EventProxy.getInstance().removeQuitApplicationListener(l);
+		else if (mrjVersion >= 4.0f)
 			MRJ4EventProxy.getInstance().removeQuitApplicationListener(l);
 		else if (mrjVersion >= 1.5f)
 			MRJ23EventProxy.getInstance().removeQuitApplicationListener(l);
@@ -1037,7 +1061,9 @@ public final class MRJAdapter implements MRJFolderConstants
 	 */
 	public static void addOpenDocumentListener(ActionListener l, Object source)
 	{
-		if (mrjVersion >= 4.0f)
+		if (mrjVersion >= 9.0f)
+			MRJ9EventProxy.getInstance().addOpenDocumentListener(l, source);
+		else if (mrjVersion >= 4.0f)
 			MRJ4EventProxy.getInstance().addOpenDocumentListener(l, source);
 		else if (mrjVersion >= 1.5f)
 			MRJ23EventProxy.getInstance().addOpenDocumentListener(l, source);
@@ -1049,7 +1075,9 @@ public final class MRJAdapter implements MRJFolderConstants
 	 */
 	public static void removeOpenDocumentListener(ActionListener l)
 	{
-		if (mrjVersion >= 4.0f)
+		if (mrjVersion >= 9.0f)
+			MRJ9EventProxy.getInstance().removeOpenDocumentListener(l);
+		else if (mrjVersion >= 4.0f)
 			MRJ4EventProxy.getInstance().removeOpenDocumentListener(l);
 		else if (mrjVersion >= 1.5f)
 			MRJ23EventProxy.getInstance().removeOpenDocumentListener(l);
@@ -1078,7 +1106,9 @@ public final class MRJAdapter implements MRJFolderConstants
 	 */
 	public static void addPrintDocumentListener(ActionListener l, Object source)
 	{
-		if (mrjVersion >= 4.0f)
+		if (mrjVersion >= 9.0f)
+			MRJ9EventProxy.getInstance().addPrintDocumentListener(l, source);
+		else if (mrjVersion >= 4.0f)
 			MRJ4EventProxy.getInstance().addPrintDocumentListener(l, source);
 		else if (mrjVersion >= 1.5f)
 			MRJ23EventProxy.getInstance().addPrintDocumentListener(l, source);
@@ -1091,7 +1121,9 @@ public final class MRJAdapter implements MRJFolderConstants
 	 */
 	public static void removePrintDocumentListener(ActionListener l)
 	{
-		if (mrjVersion >= 4.0f)
+		if (mrjVersion >= 9.0f)
+			MRJ9EventProxy.getInstance().removePrintDocumentListener(l);
+		else if (mrjVersion >= 4.0f)
 			MRJ4EventProxy.getInstance().removePrintDocumentListener(l);
 		else if (mrjVersion >= 1.5f)
 			MRJ23EventProxy.getInstance().removePrintDocumentListener(l);
