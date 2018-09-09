@@ -176,7 +176,13 @@ public final class MRJAdapter implements MRJFolderConstants
 	{
 		// Get the version of Java
 		String prop = System.getProperty("java.version");
-		javaVersion = new Float(prop.substring(0, 3)).floatValue();
+		String[] parts = prop.split("\\.");
+		if (parts.length == 1) {
+			javaVersion = Float.valueOf(prop).floatValue();
+		}
+		else {
+			javaVersion = Float.valueOf(parts[0] + '.' + parts[1]).floatValue();
+		}
 
 		// Get the version of MRJ
 		/**
