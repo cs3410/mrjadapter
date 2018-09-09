@@ -176,42 +176,36 @@ public final class MRJAdapter implements MRJFolderConstants
 	{
 		// Get the version of Java
 		String prop = System.getProperty("java.version");
-		String[] parts = prop.split("\\.");
-		if (parts.length == 1) {
-			javaVersion = Float.valueOf(prop).floatValue();
-		}
-		else {
-			javaVersion = Float.valueOf(parts[0] + '.' + parts[1]).floatValue();
-		}
+		// Take all characters after the dash up to the second period,
+		// if any, and convert that into a float
+		int st = 0;
+		int dash = prop.indexOf('-');
+		if (dash != -1 && dash != prop.length() - 1)
+			st = dash + 1;
+		int en = prop.length();
+		int dot = prop.indexOf('.', st);
+		if (dot != -1 && dot != prop.length() - 1)
+			dot = prop.indexOf('.', dot + 1);
+		if (dot != -1)
+			en = dot;
+		javaVersion = Float.valueOf(prop.substring(st, en)).floatValue();
 
-		// Get the version of MRJ
+		// Get the version of MRJ from the version of Java
 		/**
-		 * @todo Use java.runtime.version instead
 		 * See <http://java.sun.com/j2se/versioning_naming.html>
 		 */
-		prop = System.getProperty("mrj.version");
-		if (prop != null)
+		String os = System.getProperty("os.name");
+		if (os != null && os.toLowerCase().contains("os x"))
 		{
-			// 10.4, Java 1.4: 269
-			// 10.4, Java 1.5: 1040.1.5.0_07-164
-			// 10.5, Java 1.4: b05-302
-			// 10.5, Java 1.5: 1040.1.5.0_13-237
-			
-			// Take all characters after the dash up to the second period,
-			// if any, and convert that into a float
-			int st = 0;
-			int dash = prop.indexOf('-');
-			if (dash != -1 && dash != prop.length() - 1)
-				st = dash + 1;
-			int en = prop.length();
-			int dot = prop.indexOf('.', st);
-			if (dot != -1 && dot != prop.length() - 1)
-				dot = prop.indexOf('.', dot + 1);
-			if (dot != -1)
-				en = dot;
-			mrjVersion = new Float(prop.substring(st, en)).floatValue();
+			if (javaVersion <= 1.8f) {
+				// MRJ is the Java version after the dot for Java <= 1.8
+				mrjVersion = (javaVersion * 10) - 10;
+			}
+			else {
+				mrjVersion = javaVersion;
+			}
 		}
-		
+
 		// Instantiate the Cocoa class loader if we're on Mac OS X
 		if (mrjVersion >= 3.0f)
 		{
